@@ -2,6 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+  const name = "Habib Vai";
+  var name1 = "JOY Bangla";
   return (
     <div className="App">
       <header className="App-header">
@@ -9,6 +11,10 @@ function App() {
         <p>
           Edit NoshtoJibon <code>src/App.js</code> and save to reload.
         </p>
+        <p>My First React App</p>
+        <h1>
+          This is react Boss!! {name} is {name1}
+        </h1>
         <a
           className="App-link"
           href="https://reactjs.org"
