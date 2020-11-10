@@ -2,27 +2,34 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  const name = "Habib Vai";
-  var name1 = "JOY Bangla";
+  var fontColor = {
+    color: "blue",
+    backgroundColor: "lightsalmon",
+  };
+  var person = {
+    name: "Habib Vai",
+    post: "Neta",
+    job: "Churls koiro na",
+  };
+  var person2 = {
+    name: "Naeeem vai",
+    post: "Don",
+    job: "Jono Shebok",
+  };
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit NoshtoJibon <code>src/App.js</code> and save to reload.
-        </p>
+
         <p>My First React App</p>
-        <h1>
-          This is react Boss!! {name} is {name1}
+
+        <h1 style={fontColor}>
+          This is react Boss!!{" "}
+          {person.name + " " + person.job + " " + person.post}
         </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p style={{ backgroundColor: "cyan", color: "red" }}>
+          {person2.job + " " + person2.name}
+        </p>
       </header>
     </div>
   );
